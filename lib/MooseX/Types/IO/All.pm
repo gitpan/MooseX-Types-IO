@@ -3,7 +3,7 @@ package MooseX::Types::IO::All;
 use warnings;
 use strict;
 
-our $VERSION   = '0.01';
+our $VERSION   = '0.02';
 our $AUTHORITY = 'cpan:FAYLAND';
 
 use IO::All;
@@ -65,13 +65,13 @@ designed to work with the L<IO::All> suite of objects.
 
 =over 4
 
-=item L<Str>
+=item B<Str>
 
     io $_;
 
 L<IO::All> object. 
 
-=item L<ScalarRef>
+=item B<ScalarRef>
 
     my $s = io('$');
     $s->print($$_);
@@ -86,7 +86,7 @@ instead of ->all or ->slurp
 
 =head1 SEE ALSO
 
-L<Moose>, L<MooseX::Types>, L<IO::All>
+L<Moose>, L<MooseX::Types>, L<MooseX::Types::IO>, L<IO::All>
 
 =head1 AUTHOR
 

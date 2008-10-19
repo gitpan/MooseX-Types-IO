@@ -3,7 +3,7 @@ package MooseX::Types::IO;
 use warnings;
 use strict;
 
-our $VERSION   = '0.01';
+our $VERSION   = '0.02';
 our $AUTHORITY = 'cpan:FAYLAND';
 
 use IO qw/File Handle/;
@@ -70,20 +70,20 @@ designed to work with the L<IO> suite of objects.
 
 =over 4
 
-=item L<Str>
+=item B<Str>
 
     my $fh = new IO::File;
     $fh->open($_);
 
 L<IO::File> object.
 
-=item L<ScalarRef>
+=item B<ScalarRef>
 
     IO::String->new($$_);
 
 L<IO::String> object. 
 
-=item L<ArrayRef[FileHandle|Str]>
+=item B<ArrayRef[FileHandle|Str]>
 
     IO::Handle->new_from_fd( @$_ );
 
@@ -93,7 +93,7 @@ L<IO::Handle> object.
 
 =head1 SEE ALSO
 
-L<Moose>, L<MooseX::Types>, L<IO::Hanlde>, L<IO::File>, L<IO::String>
+L<Moose>, L<MooseX::Types>, L<MooseX::Types::IO::All>, L<IO::Hanlde>, L<IO::File>, L<IO::String>
 
 =head1 AUTHOR
 
